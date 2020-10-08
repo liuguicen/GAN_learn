@@ -61,7 +61,6 @@ condition_dim = 10
 # Decide which device we want to run on
 device = torch.device("cuda:0" if (torch.cuda.is_available() and ngpu > 0) else "cpu")
 
-
 def loadData():
     dataset = torchvision.datasets.MNIST(root='./data', train=True,
                                          download=True,
